@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Login
+        </title>
+         {% load static from staticfiles %}
+        <link  rel="stylesheet" href="{% static 'css/stylelogin.css' %}" />
+    </head>
+    <body>
+        <div id="login">
+            <form>
+                <h2>Sing In</h2>
+                <input type="password" id="password" placeholder="Enter Password"/>
+                <input class="button" type="button" id="login-btn" value="Sing In" onclick="check(this.form)"/>
+            </form>
+        </div>
+    </body>
+     <script src="{% static 'js/login.js' %}"></script>
+</html>
