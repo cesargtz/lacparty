@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Login
+        </title>
+         {% load static from staticfiles %}
+        <link  rel="stylesheet" href="{% static 'css/stylelogin.css' %}" />
+    </head>
+    <body>
+        <div id="login">
+            <form method="POST">
+                {% csrf_token %}
+                <h2>Sing In</h2>
+                {{ form.username }}
+                {{ form.username.errors }} <!-- Este se asocia a la caja de texto para agregar el error que esta declarado en el forms.py-->
+                {{ form.password }}
+                {{ form.password.errors }}
+                {# <input type="password" id="password" placeholder="Enter Password"/>#}
+                <input class="button" type="submit" id="login-btn" value="Sing In"/>
+            </form>
+        </div>
+    </body>
+</html>

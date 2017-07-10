@@ -21,8 +21,7 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-LOCAL_APPS = ['apps.main',
-              'apps.login']
+LOCAL_APPS = ['apps.main','apps.users']
 
 THIRD_APPS = []
 
@@ -58,8 +57,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'lacParty.wsgi.application'
 
+
+
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 AUTH_PASSWORD_VALIDATORS = [
     {
