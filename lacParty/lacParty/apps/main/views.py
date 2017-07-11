@@ -36,36 +36,3 @@ class UploadView(FormView):
             return self.form_valid(form)
         else:
             return self.form_invalid(form)
-
-# def FormView(request):
-#     return render(request, "upload.html")
-#
-#
-# def UploadView(request):
-#     for count, x in enumerate(request.FILES.getlist("files")):
-#         def process(f):
-#             url = './Gallery/' + str(x.name)
-#             with open(url, 'wb+') as destination:
-#                 obj = Photography(image=url)
-#                 obj.save()
-#                 for chunk in f.chunks():
-#                     destination.write(chunk)
-#         img = Image.open(x['file'])
-#         img.save(x['file'], format='JPEG', quality=70)
-#         process(x)
-#     return redirect(reverse('main:home'))
-
-
-
-    # def UploadView(request):
-    #     for count, x in enumerate(request.FILES.getlist("files")):
-    #         def process(f):
-    #             url = './Gallery/' + str(x.name)
-    #             with open(url, 'wb+') as destination:
-    #                 obj = Photography(image=url)
-    #                 obj.save()
-    #                 print (url)
-    #                 for chunk in f.chunks():
-    #                     destination.write(chunk)
-    #         process(x)
-    #     return redirect(reverse('main:home'))

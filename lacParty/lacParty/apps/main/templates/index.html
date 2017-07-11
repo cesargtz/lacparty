@@ -134,101 +134,18 @@
 
                 <div class="cat-wrapper" id="cat-fashion">
 
-                    <!-- <div class="header animated" style="background-image:url(img/Gallery/fashion1.png)" data-animation="fadeIn" data-animation-delay="0">
-                        <div class="overlay"></div>
-                        <div class="title">
-                            <p>F<br/>A<br/>S<br/>H<br/>I<br/>O<br/>N</p>
-                        </div>
-                    </div> -->
 
                     <div class="images">
 
                         {% for photography in photographys %}
                             <div class="gallery-item animated regular" data-animation="fadeIn" data-animation-delay="200">
                                 <img src="{{ photography.image.url }}" alt="">
-                                <!-- <a href="{% static 'img/Full_sizes/img1.jpg' %}" class="overlay"></a> -->
+                                <a href="{{ photography.image.url }}" class="overlay"></a>
                                 <a href="#" class="icon1-heart-empty"></a>
                                 <a href="#" class="icon1-heart"></a>
                                 <p class="love">47</p>
                             </div>
                         {% endfor %}
-                        <!-- <div class="gallery-item animated small" data-animation="fadeIn" data-animation-delay="200">
-                            <img src="{% static 'img/Gallery/fashion6.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img9.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated wide" data-animation="fadeIn" data-animation-delay="200">
-                            <img src="{% static 'img/Gallery/fashion10.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img4.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated regular" data-animation="fadeIn" data-animation-delay="300">
-                            <img src="{% static 'img/Gallery/fashion7.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img12.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated regular" data-animation="fadeIn" data-animation-delay="300">
-                            <img src="{% static 'img/Gallery/fashion3.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img5.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated regular" data-animation="fadeIn" data-animation-delay="300">
-                            <img src="{% static 'img/Gallery/fashion11.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img10.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated small" data-animation="fadeIn" data-animation-delay="400">
-                            <img src="{% static 'img/Gallery/fashion8.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img11.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated small" data-animation="fadeIn" data-animation-delay="400">
-                            <img src="{% static 'img/Gallery/fashion4.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img3.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated small" data-animation="fadeIn" data-animation-delay="400">
-                            <img src="{% static 'img/Gallery/fashion12.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img2.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated wide" data-animation="fadeIn" data-animation-delay="500">
-                            <img src="{% static 'img/Gallery/fashion9.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img8.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated regular" data-animation="fadeIn" data-animation-delay="500">
-                            <img src="{% static 'img/Gallery/fashion5.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img7.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div>
-                        <div class="gallery-item animated small" data-animation="fadeIn" data-animation-delay="500">
-                            <img src="{% static 'img/Gallery/fashion13.png' %}" alt="">
-                            <a href="{% static 'img/Full_sizes/img6.jpg' %}" class="overlay"></a>
-                            <a href="#" class="icon1-heart-empty"></a>
-                            <a href="#" class="icon1-heart"></a>
-                            <p class="love">47</p>
-                        </div> -->
 
                     </div>
                 </div>
