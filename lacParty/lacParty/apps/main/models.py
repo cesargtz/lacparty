@@ -5,7 +5,7 @@ from django.db import models
 
 class Photography(models.Model):
 
-    image = models.ImageField(upload_to="Gallery")   #upload_to significa que va a esa carpeta
+    image = models.FileField(upload_to="Gallery")   #upload_to significa que va a esa carpeta
 
 
     create_at = models.DateTimeField(auto_now_add=True) # Fecha de Cuando se creo

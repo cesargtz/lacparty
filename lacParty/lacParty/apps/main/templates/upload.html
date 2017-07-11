@@ -13,7 +13,9 @@
         <div id="login">
             <form method="POST" action="upload" enctype="multipart/form-data"> {% csrf_token %}
                 <h2>Upload Photos</h2>
-                <input type="file" name="files" multiple />
+                {{ form.image }}
+                {{ form.image.errors }}
+                {# <input type="file" name="files" multiple />#}
                 <input class="button" type="submit" id="login-btn" value="Upload"/>
             </form>
         </div>
