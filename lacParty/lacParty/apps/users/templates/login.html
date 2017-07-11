@@ -14,10 +14,9 @@
                 {% csrf_token %}
                 <h2>Sing In</h2>
                 {{ form.username }}
-                {{ form.username.errors }} <!-- Este se asocia a la caja de texto para agregar el error que esta declarado en el forms.py-->
+                {{ form.username.errors }}
                 {{ form.password }}
                 {{ form.password.errors }}
-                {# <input type="password" id="password" placeholder="Enter Password"/>#}
                 <input class="button" type="submit" id="login-btn" value="Sing In"/>
             </form>
         </div>

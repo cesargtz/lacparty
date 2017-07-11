@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Login
+        </title>
+         {% load static from staticfiles %}
+        <link  rel="stylesheet" href="{% static 'css/stylelogin.css' %}" />
+    </head>
+    <body>
+        {% if user.username %}
+        <div id="login">
+            <form method="POST" action="upload" enctype="multipart/form-data"> {% csrf_token %}
+                <h2>Upload Photos</h2>
+                <input type="file" name="files" multiple />
+                <input class="button" type="submit" id="login-btn" value="Upload"/>
+            </form>
+        </div>
+        {% else %}
+        <h1 class="title">Acceso Denegado</h1>
+        {% endif%}
+    </body>
+</html>
